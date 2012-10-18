@@ -70,12 +70,10 @@ all the dependencies, including sources of such dependencies, in correspondent j
 Last but not least feature is support for libs and libsrc forders for Eclipse development.<br> 
 Components *.tar.gz and *.zip can be extracted directly into Eclipse Android project home,<br>
 creating libs and libsrc directories with jar and sources linked by .properties file that<br>
-allows Eclipse with ADT plugin locate and display components sources and their dependencies.
+allows Eclipse with ADT plugin locate and display components sources and their dependencies.<br>
+The above source discovery mechanism was verified using Eclipse v3.8 with ADT v20.0.3 on OS X 10.7.5.   
 
 To build the project with the above Android support, run maven as following:
 
     mvn -P android clean install -Dtest.properties=my-users.properties
-   
- 
 
- 
