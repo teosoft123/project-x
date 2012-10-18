@@ -17,22 +17,38 @@ and for Windows MySysGit is highly recommended, see <code>http://msysgit.github.
 
 ##### Obtainig and Building #####
 
-TODO Change this URL  
+Clone git project and enter the project home directory:
 
     $ git clone https://github.com/teosoft123/project-x.git 
-
-Once you cloned the project, enter the project's directory and run maven:
-
     $ cd project-x
+
+Note: all path below presume that current directory is the project home,<br>
+the directory created by <code>git clone</code> command. 
+
+Run maven:
+
     $ mvn clean install
 
-Your build will fail at the test phase because you need to create two users and add some content.
+Your build will succeed build phase but fail at the test phase. Now you need to create two users and <add some content>.
 
 ##### Adding test users and content #####
 
-You need to add two users and content for them to run tests as a part of build.<br>
+You need to add two users <and content for them> to run tests as a part of build.<br>
 Each user has to have their own e-mail address.<br>
 Create users by going to <code>http://yfrog.com/</code>
+
+##### Telling the build to use your own users #####
+
+Create a file name it my-users.properties. Add the following content:
+
+    user.1.email: <your user1 e-mail here>
+    user.1.password: <your user1 password here>
+    
+    user.2.email: <your user2 e-mail here>
+    user.2.password: <your user2 password here>
+
+
+
 
 
   
