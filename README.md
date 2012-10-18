@@ -39,7 +39,7 @@ Create users by going to <code>http://yfrog.com/</code>
 
 ##### Telling the build to use your own users #####
 
-Create a file name it my-users.properties. Add the following content:
+Create a file name it 'my-users.properties', without quotes. Add the following content:
 
     user.1.email: <your user1 e-mail here>
     user.1.password: <your user1 password here>
@@ -47,8 +47,30 @@ Create a file name it my-users.properties. Add the following content:
     user.2.email: <your user2 e-mail here>
     user.2.password: <your user2 password here>
 
+Run maven again, this time telling it to use your users:
+
+    $ mvn clean install -Dtest.properties=my-users.properties
+
+This time tests must pass.
+
+#### Android Support ####
 
 
+The previous build created components most suitable for Java development using maven.<br>
+Components created this way do not include any dependencies and delegate dependency management<br>
+to build tools such as maven or, in worst case, to the developer.
+
+##### Packaging for Android #####
+
+For better support of Android development community, components created with Android profile package<br>
+all the dependencies, including sources of such dependencies, in correspondent jar files.
+
+##### Support for sources for Android development in Eclipse #####
+
+Last but not least feature is support for libs and libsrc forders for Eclipse development.<br> 
+Components *.tar.gz and *.zip can be extracted directly into Eclipse Android project home,<br>
+creating libs and libsrc directories with jar and sources linked by .properties file that<br>
+allows Eclipse with ADT plugin locate and display components sources and their dependecies.
 
 
-  
+ 
