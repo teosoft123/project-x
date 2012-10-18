@@ -1,9 +1,5 @@
-project-x
-=========
-
-Project X
-
 ### Yfrog-API ###
+=========
 
 Project to access yfrog Social programmatically from plain Java and Android
 
