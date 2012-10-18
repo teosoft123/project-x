@@ -30,10 +30,8 @@ Your build will fail at the test phase because you need to create two users and 
 
 ##### Adding test users and content #####
 
-You need to add two users and content for them to run tests as a part of build.
-
-Each user has to have their own e-mail address.
-
+You need to add two users and content for them to run tests as a part of build.<br>
+Each user has to have their own e-mail address.<br>
 Create users by going to <code>http://yfrog.com/</code>
 
 
