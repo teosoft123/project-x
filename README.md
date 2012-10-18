@@ -21,8 +21,8 @@ TODO Change this URL Clone https://github.com/teosoft123/project-x.git
 
 Once you cloned the project, enter the project's directory and run maven:
 
-    1. cd project-x
-    2. mvn clean install
+    $ cd project-x
+    $ mvn clean install
 
 Your build will fail at the test phase because you need to create two users and add some content.
 
