@@ -25,7 +25,7 @@ Run maven:
 
     $ mvn clean install
 
-Your build will succeed build phase but fail at the test phase. Now you need to create two users and <add some content>.
+Your build will succeed build phase but fail at the test phase. Now you need to create two users.
 
 ##### Adding test users and content #####
 
