@@ -63,7 +63,7 @@ all the dependencies, including sources of such dependencies, in correspondent j
 
 ##### Support for sources for Android development in Eclipse #####
 
-Last but not least feature is support for libs and libsrc forders for Eclipse development.<br> 
+Last but not least feature is the support for libs and libsrc forders for Eclipse development.<br> 
 Components *.tar.gz and *.zip can be extracted directly into Eclipse Android project home,<br>
 creating libs and libsrc directories with jar and sources linked by .properties file that<br>
 allows Eclipse with ADT plugin locate and display components sources and their dependencies.<br>
