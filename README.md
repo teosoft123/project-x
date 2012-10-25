@@ -29,9 +29,9 @@ Your build will succeed build phase but fail at the test phase. Now you need to 
 
 ##### Requesting Application ID #####
 
-Request your key here:
+Request your application ID here:
  
-    http://yfrog.com/app_key_request/
+    http://yfrog.com/app_id_request/
 
 ##### Adding test users and content #####
 
