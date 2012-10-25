@@ -18,14 +18,20 @@ Clone git project and enter the project home directory:
     $ git clone https://github.com/teosoft123/project-x.git 
     $ cd project-x
 
-Note: all path below presume that current directory is the project home,<br>
+Note: all paths below presume that current directory is the project home,<br>
 the directory created by <code>git clone</code> command. 
 
 Run maven:
 
     $ mvn clean install
 
-Your build will succeed build phase but fail at the test phase. Now you need to create two users.
+Your build will succeed build phase but fail at the test phase. Now you need to request an application ID  and create two users.
+
+##### Requesting Application ID #####
+
+Request your key here:
+ 
+    http://yfrog.com/app_key_request/
 
 ##### Adding test users and content #####
 
@@ -42,6 +48,8 @@ Create a file name it 'my-users.properties', without quotes. Add the following c
     
     user.2.email: <your user2 e-mail here>
     user.2.password: <your user2 password here>
+    
+    app.id: 26CDLQWXf4cb96db243b1784c626fb20521b6b64
 
 Run maven again, this time telling it to use your users:
 
