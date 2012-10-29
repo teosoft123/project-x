@@ -20,12 +20,14 @@ To obtain a logged on user timeline called Feed:
 
     Feed userFeed = api.getOwnerMessages(Group.FRIENDS, 100);
     
-To post a new message with an image:
+To post a new message with one image:
 
     ImageMetadata im = mapi.uploadImage(Group.FAMILY, imageFile);
     String imageId = im.getImageId();
     Message m = Message.create("Test message from yfrog Social Java API", Group.FRIENDS, Privilege.SOCIAL, Arrays.asList(imageId));
     String messageId = api.post(m);
+    
+To upload multiple images, pass a List of image IDs as a last parameter.
 
 To get the message by ID:
 
