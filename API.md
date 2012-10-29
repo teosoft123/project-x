@@ -35,6 +35,14 @@ To comment on a message:
 
     String replyId = api.comment(mt, "This is a reply");
 
+#### Yfrog Media API
+
+To post messages with images you need to upload images first.
+To upload an image with family group permission:
+
+    File imageFile = new File(<your file name>);
+    ImageMetadata im = mediaApi.uploadImage(Group.FAMILY, imageFile);
+ 
 
 <!--
 <table>
@@ -43,4 +51,3 @@ To comment on a message:
 </table>
 -->
 
-#### Yfrog Media API 
