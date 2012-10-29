@@ -5,11 +5,11 @@ Detailed API Documentation
 
 All messaging operations are performed using an instance of a class Yfrog:
 
-'''Yfrog api = Yfrog.getInstance();'''
+    Yfrog api = Yfrog.getInstance();
 
 To start using Yfrog Social, login first
 
-'''api.login(<email>, <password>, <application-id>'''
+    api.login(<email>, <password>, <application-id>
 
 
 
