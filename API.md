@@ -8,7 +8,7 @@ All messaging operations are performed using an instance of a class Yfrog:
     
 All media-related operations are performed using an instance of a class YfrogMedia:
 
-YfrogMedia mediaApi = YfrogMedia.getInstance();    
+    YfrogMedia mediaApi = YfrogMedia.getInstance();    
 
 To start using Yfrog Social, login first
 
