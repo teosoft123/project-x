@@ -19,17 +19,23 @@ Login creates a cookie that is used for all following methods calls.
 To obtain a logged on user timeline called Feed:
 
     Feed userFeed = api.getOwnerMessages(Group.FRIENDS, 100);
-
-To comment on a message:
-
     
 To post a new message with an image:
 
     ImageMetadata im = mapi.uploadImage(Group.FAMILY, imageFile);
     String imageId = im.getImageId();
-    m = Message.create("Test message from yfrog Social Java API", Group.FRIENDS, Privilege.SOCIAL, Arrays.asList(imageId));
-    messageId = api.post(m);
+    Message m = Message.create("Test message from yfrog Social Java API", Group.FRIENDS, Privilege.SOCIAL, Arrays.asList(imageId));
+    String messageId = api.post(m);
+
+To get the message by ID:
+
+    MessageThread mt = api.getMessage(messageId);
      
+To comment on a message:
+
+    String replyId = api.comment(mt, "This is a reply");
+
+
 <!--
 <table>
 <tr><th>name</th><th>required</th><th>description</th></tr>
