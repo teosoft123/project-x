@@ -31,5 +31,5 @@ To use Yfrog API, every application requires Application ID. You can request you
     
 ##### Development
 
-You can see an example of Android application that logs on to user account in yfrog-examples project.
+You can see an example of Android application that logs on to user account in <code>yfrog-examples</code> project.
 See file API.md to more details on how to use Yfrog APIs. 
