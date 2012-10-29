@@ -48,6 +48,9 @@ To upload an image with family group permission:
 To show images, you need to download them: 
 
     InputStream result = mapi.getMedia(imageId);
+    
+Note that images access is restricted by user relationship with the image owner.
+If there's no connection between logged in user and image owner, only public images will be downloadable.
 
 <!--
 <table>
