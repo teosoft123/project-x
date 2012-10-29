@@ -1,5 +1,4 @@
-Detailed API Documentation
-===
+### How-To API Documentation
 
 #### Yfrog User and Messaging API 
 
