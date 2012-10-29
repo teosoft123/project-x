@@ -3,8 +3,6 @@
 
 Project to access yfrog Social programmatically from plain Java and Android
 
-#### How to obtain and build ####
-
 ##### Pre-requisites #####
 
 You will need to have git v >= 1.7.4, eclipse with ADT plugin and Java 1.6 installed on your development computer.<br/>
@@ -30,3 +28,8 @@ Navigate to project home directory. There are two projects, yfrog-api-android an
 To use Yfrog API, every application requires Application ID. You can request your application ID here:
  
     http://yfrog.com/app_id_request/
+    
+##### Development
+
+You can see an example of Android application that logs on to user account in yfrog-examples project.
+See file API.md to more details on how to use Yfrog APIs. 
