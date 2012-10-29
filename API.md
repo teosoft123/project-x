@@ -44,7 +44,10 @@ To upload an image with family group permission:
 
     File imageFile = new File(<your file name>);
     ImageMetadata im = mediaApi.uploadImage(Group.FAMILY, imageFile);
- 
+
+To show images, you need to download them: 
+
+    InputStream result = mapi.getMedia(imageId);
 
 <!--
 <table>
